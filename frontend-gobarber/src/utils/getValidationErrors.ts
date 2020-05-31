@@ -1,4 +1,3 @@
-import React from 'react';
 import { ValidationError } from 'yup';
 
 interface Errors {
