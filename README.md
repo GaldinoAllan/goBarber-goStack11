@@ -4,7 +4,7 @@
 </p>
 </br>
 
-<title align="center" style="font-weight: bold;">GoBarber</title>
+<h1 align="center" style="font-weight: bold;">GoBarber</h1>
 
 </br>
 <p align="center">
