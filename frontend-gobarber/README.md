@@ -3,14 +3,12 @@
 </h1>
 
 <h3 align="center">
-  Express Application for GoBarber project
+  ReactJS Application for GoBarber project
 </h3>
 
 <p align="center">The best way to schedule your service!</p>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EliasGcf/gobarber-api?color=%23FF9000">
-
   <img alt="GitHub" src="https://img.shields.io/github/license/EliasGcf/gobarber-api?color=%23FF9000">
 </p>
 
@@ -20,9 +18,11 @@
   <a href="#-license">License</a>
 </p>
 
-## 💇🏻‍♂️ About the project
+<p align="center">
+  <img alt="Layout" src="https://res.cloudinary.com/eliasgcf/image/upload/v1588811213/GoBarber/Kapture_2020-05-06_at_21.25.26_tijnl5.gif">
+</p>
 
-This api provides everything needed to organize appointments between the barbers and customers.
+## 💇🏻‍♂️ About the project
 
 Customers can choose the best time available to them.
 
@@ -30,19 +30,17 @@ Providers can see all their appointments, manage the times, also see if one clie
 
 ## 🚀 Technologies
 
-Technologies that I used to develop this api
+Technologies that I used to develop this web client
 
-- [Node.js](https://nodejs.org/en/)
+- [ReactJS](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Express](https://expressjs.com/pt-br/)
-- [Multer](https://github.com/expressjs/multer)
-- [TypeORM](https://typeorm.io/#/)
-- [JWT-token](https://jwt.io/)
-- [uuid v4](https://github.com/thenativeweb/uuidv4/)
-- [PostgreSQL](https://www.postgresql.org/)
-- [Date-fns](https://date-fns.org/)
-- [Jest](https://jestjs.io/)
-- [SuperTest](https://github.com/visionmedia/supertest)
+- [React Router DOM](https://reacttraining.com/react-router/)
+- [React Icons](https://react-icons.netlify.com/#/)
+- [UnForm](https://unform.dev/) [💜](https://rocketseat.com.br/)
+- [Yup](https://github.com/jquense/yup)
+- [Styled Components](https://styled-components.com/)
+- [Polished](https://github.com/styled-components/polished)
+- [Axios](https://github.com/axios/axios)
 - [Husky](https://github.com/typicode/husky)
 - [Commitlint](https://github.com/conventional-changelog/commitlint)
 - [Commitizen](https://github.com/commitizen/cz-cli)

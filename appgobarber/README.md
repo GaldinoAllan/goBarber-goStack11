@@ -3,14 +3,12 @@
 </h1>
 
 <h3 align="center">
-  Express Application for GoBarber project
+  React Native Application for GoBarber project
 </h3>
 
 <p align="center">The best way to schedule your service!</p>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EliasGcf/gobarber-api?color=%23FF9000">
-
   <img alt="GitHub" src="https://img.shields.io/github/license/EliasGcf/gobarber-api?color=%23FF9000">
 </p>
 
@@ -22,27 +20,23 @@
 
 ## 💇🏻‍♂️ About the project
 
-This api provides everything needed to organize appointments between the barbers and customers.
-
 Customers can choose the best time available to them.
 
 Providers can see all their appointments, manage the times, also see if one client canceled the schedule.
 
 ## 🚀 Technologies
 
-Technologies that I used to develop this api
+Technologies that I used to develop this mobile client
 
-- [Node.js](https://nodejs.org/en/)
+- [ReactJS](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Express](https://expressjs.com/pt-br/)
-- [Multer](https://github.com/expressjs/multer)
-- [TypeORM](https://typeorm.io/#/)
-- [JWT-token](https://jwt.io/)
-- [uuid v4](https://github.com/thenativeweb/uuidv4/)
-- [PostgreSQL](https://www.postgresql.org/)
-- [Date-fns](https://date-fns.org/)
-- [Jest](https://jestjs.io/)
-- [SuperTest](https://github.com/visionmedia/supertest)
+- [React Native](https://reactnative.dev/)
+- [React Navigation](https://reactnavigation.org/)
+- [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+- [UnForm](https://unform.dev/) [💜](https://rocketseat.com.br/)
+- [Yup](https://github.com/jquense/yup)
+- [Styled Components](https://styled-components.com/)
+- [Axios](https://github.com/axios/axios)
 - [Husky](https://github.com/typicode/husky)
 - [Commitlint](https://github.com/conventional-changelog/commitlint)
 - [Commitizen](https://github.com/commitizen/cz-cli)
