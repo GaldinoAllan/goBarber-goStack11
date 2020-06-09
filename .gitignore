@@ -1,0 +1,7 @@
+backend/node_modules/
+backend/tmp/uploads/*.jpg
+backend/.env
+
+frontend/node_modules/
+
+mobile/node_modules/
