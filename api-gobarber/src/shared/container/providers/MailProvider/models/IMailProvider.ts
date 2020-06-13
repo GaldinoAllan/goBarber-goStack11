@@ -1,4 +1,6 @@
+import ISendMailDTO from '../dtos/ISendMailDTO'
+
 // eslint-disable-next-line prettier/prettier
 export default interface IMailProvider{
-  sendMail(to: string, body: string): Promise<void>;
+  sendMail(data: ISendMailDTO): Promise<void>;
 }
