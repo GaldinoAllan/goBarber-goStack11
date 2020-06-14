@@ -15,7 +15,7 @@ interface IRequest {
 }
 
 @injectable()
-class UpdateProfile {
+class UpdateProfileService {
   constructor(
     // eslint-disable-next-line prettier/prettier
     @inject('UsersRepository')
@@ -70,4 +70,4 @@ class UpdateProfile {
   }
 }
 
-export default UpdateProfile;
+export default UpdateProfileService;
