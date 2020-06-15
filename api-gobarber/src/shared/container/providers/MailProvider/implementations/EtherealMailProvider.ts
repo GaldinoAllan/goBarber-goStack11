@@ -8,7 +8,6 @@ import ISendMailDTO from '../dtos/ISendMailDTO';
 
 @injectable()
 export default class EtherealMailProvider implements IMailProvider {
-  // eslint-disable-next-line prettier/prettier
   private client: Transporter;
 
   constructor(

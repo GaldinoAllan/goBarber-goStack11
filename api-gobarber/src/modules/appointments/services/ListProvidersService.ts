@@ -11,7 +11,6 @@ interface IRequest {
 @injectable()
 class ListProvidersService {
   constructor(
-    // eslint-disable-next-line prettier/prettier
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
   ) {}

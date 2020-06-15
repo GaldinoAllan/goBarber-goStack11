@@ -6,7 +6,6 @@ import IFindAllProvidersDTO from '@modules/users/dtos/IFindAllProvidersDTO';
 import User from '../../infra/typeorm/entities/User';
 
 class FakeUsersRepository implements IUserRepository {
-  // eslint-disable-next-line prettier/prettier
   private users: User[] = [];
 
   async findById(id: string): Promise<User | undefined> {

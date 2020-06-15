@@ -6,7 +6,6 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-/* eslint-disable prettier/prettier */
 @Entity('users')
 class User {
   @PrimaryGeneratedColumn('uuid')

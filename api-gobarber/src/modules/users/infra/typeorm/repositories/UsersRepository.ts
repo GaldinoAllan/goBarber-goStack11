@@ -7,7 +7,6 @@ import IFindAllProvidersDTO from '@modules/users/dtos/IFindAllProvidersDTO';
 import User from '../entities/User';
 
 class UsersRepository implements IUserRepository {
-  // eslint-disable-next-line prettier/prettier
   private ormRepository: Repository<User>;
 
   constructor() {

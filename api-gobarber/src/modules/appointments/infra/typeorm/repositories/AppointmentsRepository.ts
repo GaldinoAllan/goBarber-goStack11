@@ -7,7 +7,6 @@ import IFindAllInMonthFromProviderDTO from '@modules/appointments/dtos/IFindAllI
 import Appointment from '../entities/Appointment';
 
 class AppointmentsRepository implements IAppointmentsRepository {
-  // eslint-disable-next-line prettier/prettier
   private ormRepository: Repository<Appointment>;
 
   constructor() {
@@ -32,16 +31,20 @@ class AppointmentsRepository implements IAppointmentsRepository {
     const appointments = await this.ormRepository.find({
       where: {
         provider_id,
-        date: Raw(dateFieldName =>
-          `to_char(${dateFieldName}, 'MM-YYYY') = '${parsedMonth}-${year}'`
+        date: Raw(
+          dateFieldName =>
+            `to_char(${dateFieldName}, 'MM-YYYY') = '${parsedMonth}-${year}'`,
         ),
-      }
-    })
+      },
+    });
 
     return appointments;
   }
 
-  async create({ provider_id, date }: ICreateAppointmentDTO): Promise<Appointment> {
+  async create({
+    provider_id,
+    date,
+  }: ICreateAppointmentDTO): Promise<Appointment> {
     const appointment = this.ormRepository.create({ provider_id, date });
 
     await this.ormRepository.save(appointment);

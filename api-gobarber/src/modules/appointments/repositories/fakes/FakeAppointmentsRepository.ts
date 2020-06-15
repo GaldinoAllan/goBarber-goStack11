@@ -8,7 +8,6 @@ import IFindAllInMonthFromProviderDTO from '@modules/appointments/dtos/IFindAllI
 import Appointment from '../../infra/typeorm/entities/Appointment';
 
 class AppointmentsRepository implements IAppointmentsRepository {
-  // eslint-disable-next-line prettier/prettier
   private appointments: Appointment[] = [];
 
   async findByDate(date: Date): Promise<Appointment | undefined> {

@@ -5,14 +5,13 @@ import IUserTokensRepository from '@modules/users/repositories/IUserTokensReposi
 import UserToken from '../entities/UserToken';
 
 class UserTokensRepository implements IUserTokensRepository {
-  // eslint-disable-next-line prettier/prettier
   private ormRepository: Repository<UserToken>;
 
-  constructor(){
+  constructor() {
     this.ormRepository = getRepository(UserToken);
   }
 
-  async findByToken(token: string): Promise<UserToken | undefined>{
+  async findByToken(token: string): Promise<UserToken | undefined> {
     const userToken = await this.ormRepository.findOne({
       where: { token },
     });

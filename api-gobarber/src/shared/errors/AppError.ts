@@ -1,10 +1,9 @@
 class AppError {
-  // eslint-disable-next-line prettier/prettier
   readonly message: string;
 
   readonly statusCode: number;
 
-  constructor(message: string, statusCode = 400){
+  constructor(message: string, statusCode = 400) {
     this.message = message;
     this.statusCode = statusCode;
   }

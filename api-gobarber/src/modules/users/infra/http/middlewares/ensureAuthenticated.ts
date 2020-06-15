@@ -28,12 +28,11 @@ export default function ensureAuthenticated(
   try {
     const decoded = verify(token, authConfig.jwt.secret);
 
-    // eslint-disable-next-line prettier/prettier
     const { sub } = decoded as ITokenPayload;
 
     request.user = {
       id: sub,
-    }
+    };
 
     return next();
   } catch {

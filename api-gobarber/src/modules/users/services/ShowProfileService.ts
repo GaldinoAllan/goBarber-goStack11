@@ -12,10 +12,9 @@ interface IRequest {
 @injectable()
 class ShowProfileService {
   constructor(
-    // eslint-disable-next-line prettier/prettier
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
-    ) {}
+  ) {}
 
   async execute({ user_id }: IRequest): Promise<User> {
     const user = await this.usersRepository.findById(user_id);

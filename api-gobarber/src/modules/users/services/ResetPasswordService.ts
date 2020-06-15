@@ -14,7 +14,6 @@ interface IRequest {
 @injectable()
 class ResetPasswordService {
   constructor(
-    // eslint-disable-next-line prettier/prettier
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
 
@@ -22,20 +21,20 @@ class ResetPasswordService {
     private userTokensRepository: IUserTokensRepository,
 
     @inject('HashProvider')
-    private hashProvider: IHashProvider
+    private hashProvider: IHashProvider,
   ) {}
 
   async execute({ token, password }: IRequest): Promise<void> {
     const userToken = await this.userTokensRepository.findByToken(token);
 
-    if(!userToken){
+    if (!userToken) {
       throw new AppError('User token does not exists!');
     }
 
     const user = await this.usersRepository.findById(userToken.user_id);
 
-    if(!user){
-      throw new AppError("User does not exists!");
+    if (!user) {
+      throw new AppError('User does not exists!');
     }
 
     const tokenCreatedAt = userToken.created_at;

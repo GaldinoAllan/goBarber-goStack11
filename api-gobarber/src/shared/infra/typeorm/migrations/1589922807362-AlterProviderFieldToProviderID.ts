@@ -2,12 +2,11 @@ import {
   MigrationInterface,
   QueryRunner,
   TableColumn,
-  TableForeignKey
-} from "typeorm";
+  TableForeignKey,
+} from 'typeorm';
 
 export default class AlterProviderFieldToProviderID1589922807362
   implements MigrationInterface {
-  // eslint-disable-next-line prettier/prettier
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.dropColumn('appointments', 'provider');
 
@@ -43,8 +42,7 @@ export default class AlterProviderFieldToProviderID1589922807362
       new TableColumn({
         name: 'provider',
         type: 'varchar',
-      })
+      }),
     );
   }
-
 }

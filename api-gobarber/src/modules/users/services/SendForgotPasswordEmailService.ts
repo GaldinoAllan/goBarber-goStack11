@@ -13,7 +13,6 @@ interface IRequest {
 @injectable()
 class SendForgotPasswordEmailService {
   constructor(
-    // eslint-disable-next-line prettier/prettier
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
 
@@ -21,7 +20,7 @@ class SendForgotPasswordEmailService {
     private mailProvider: IMailProvider,
 
     @inject('UserTokensRepository')
-    private userTokensRepository: IUserTokensRepository
+    private userTokensRepository: IUserTokensRepository,
   ) {}
 
   async execute({ email }: IRequest): Promise<void> {

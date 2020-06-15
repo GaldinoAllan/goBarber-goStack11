@@ -5,7 +5,6 @@ import IUserTokensRepository from '@modules/users/repositories/IUserTokensReposi
 import UserToken from '@modules/users/infra/typeorm/entities/UserToken';
 
 class FakeUserTokensRepository implements IUserTokensRepository {
-  // eslint-disable-next-line prettier/prettier
   private userTokens: UserToken[] = [];
 
   async generate(user_id: string): Promise<UserToken> {
@@ -16,8 +15,8 @@ class FakeUserTokensRepository implements IUserTokensRepository {
       token: uuid(),
       user_id,
       created_at: new Date(),
-      updated_at: new Date()
-    })
+      updated_at: new Date(),
+    });
 
     this.userTokens.push(userToken);
 
@@ -26,7 +25,7 @@ class FakeUserTokensRepository implements IUserTokensRepository {
 
   async findByToken(token: string): Promise<UserToken | undefined> {
     const userToken = this.userTokens.find(
-      findToken => findToken.token === token
+      findToken => findToken.token === token,
     );
 
     return userToken;

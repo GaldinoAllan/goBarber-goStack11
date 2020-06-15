@@ -1,7 +1,6 @@
-import {MigrationInterface, QueryRunner, Table} from "typeorm";
+import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export default class CreateUsers1589921522101 implements MigrationInterface {
-  // eslint-disable-next-line prettier/prettier
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(
       new Table({
@@ -36,7 +35,7 @@ export default class CreateUsers1589921522101 implements MigrationInterface {
             name: 'updated_at',
             type: 'timestamp',
             default: 'now()',
-          }
+          },
         ],
       }),
     );
@@ -45,5 +44,4 @@ export default class CreateUsers1589921522101 implements MigrationInterface {
   public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.dropTable('users');
   }
-
 }

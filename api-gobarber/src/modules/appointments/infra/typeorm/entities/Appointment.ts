@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import {
   Entity,
   Column,
@@ -31,7 +30,6 @@ class Appointment {
 
   @UpdateDateColumn()
   updated_at: Date;
-
 }
 
 export default Appointment;

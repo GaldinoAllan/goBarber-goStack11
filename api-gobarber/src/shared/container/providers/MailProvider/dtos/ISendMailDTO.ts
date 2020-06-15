@@ -1,11 +1,10 @@
-import IParseMailTemplateDTO from "../../MailTemplateProvider/dtos/IParseMailTemplateDTO";
+import IParseMailTemplateDTO from '../../MailTemplateProvider/dtos/IParseMailTemplateDTO';
 
 interface IMailContact {
   name: string;
   email: string;
 }
 
-// eslint-disable-next-line prettier/prettier
 export default interface ISendMailDTO {
   to: IMailContact;
   from?: IMailContact;

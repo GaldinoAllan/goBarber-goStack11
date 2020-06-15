@@ -17,13 +17,12 @@ interface IRequest {
 @injectable()
 class UpdateProfileService {
   constructor(
-    // eslint-disable-next-line prettier/prettier
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
 
     @inject('HashProvider')
     private hashProvider: IHashProvider,
-    ) {}
+  ) {}
 
   async execute({
     user_id,
@@ -59,7 +58,7 @@ class UpdateProfileService {
         user.password,
       );
 
-      if(!checkOldPassword){
+      if (!checkOldPassword) {
         throw new AppError('Old password does not match!');
       }
 
