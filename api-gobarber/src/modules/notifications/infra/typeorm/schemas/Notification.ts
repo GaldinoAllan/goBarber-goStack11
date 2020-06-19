@@ -1,5 +1,5 @@
 import {
-  ObjectId,
+  ObjectID,
   Entity,
   Column,
   CreateDateColumn,
@@ -10,7 +10,7 @@ import {
 @Entity('notifications')
 class Notification {
   @ObjectIdColumn()
-  id: ObjectId;
+  id: ObjectID;
 
   @Column()
   content: string;
