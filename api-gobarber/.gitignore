@@ -7,3 +7,5 @@ tmp/*
 !tmp/.gitkeep
 REQUIREMENTS.md
 coverage/
+.env
+ormconfig.json
