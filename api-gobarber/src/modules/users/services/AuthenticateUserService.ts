@@ -21,7 +21,6 @@ interface IResponse {
 @injectable()
 class AuthenticateUserService {
   constructor(
-    // eslint-disable-next-line prettier/prettier
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
 
