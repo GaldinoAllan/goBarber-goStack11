@@ -12,7 +12,7 @@ import routes from './routes';
 
 import '@shared/infra/typeorm';
 import '@shared/container';
-import rateLimiter from './middlewares/RateLimiter';
+import rateLimiter from './middlewares/rateLimiter';
 
 const app = express();
 
