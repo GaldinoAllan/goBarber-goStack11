@@ -9,3 +9,4 @@ REQUIREMENTS.md
 coverage/
 .env
 ormconfig.json
+dist
