@@ -41,12 +41,35 @@ Technologies that I used to develop this web client
 - [Styled Components](https://styled-components.com/)
 - [Polished](https://github.com/styled-components/polished)
 - [Axios](https://github.com/axios/axios)
-- [Husky](https://github.com/typicode/husky)
-- [Commitlint](https://github.com/conventional-changelog/commitlint)
-- [Commitizen](https://github.com/commitizen/cz-cli)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/)
+
+## 💻 Getting started
+
+### Requirements
+
+- Just having the API running
+
+**Clone the project and access the folder**
+
+```bash
+$ git clone https://github.com/GaldinoAllan/goBarber-goStack11.git && cd goBarber-goStack11/web-gobarber
+```
+
+**Follow the steps below**
+
+```bash
+# Install the dependencies
+$ yarn
+
+# Make sure the file 'src/services/api.ts' have the IP to your API
+
+# Start the client
+$ yarn start
+
+# Well done, project-web is started!
+```
 
 ## 📝 License
 

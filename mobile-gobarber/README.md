@@ -37,12 +37,41 @@ Technologies that I used to develop this mobile client
 - [Yup](https://github.com/jquense/yup)
 - [Styled Components](https://styled-components.com/)
 - [Axios](https://github.com/axios/axios)
-- [Husky](https://github.com/typicode/husky)
-- [Commitlint](https://github.com/conventional-changelog/commitlint)
-- [Commitizen](https://github.com/commitizen/cz-cli)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/)
+
+## 📱 Getting started
+
+### Requirements
+
+- Just having the API running
+
+**Clone the project and access the folder**
+
+```bash
+$ git clone https://github.com/GaldinoAllan/goBarber-goStack11.git && cd goBarber-goStack11/mobile-gobarber
+```
+
+**Follow the steps below**
+
+```bash
+# Install the dependencies
+$ yarn
+
+# Be sure the file 'src/services/api.ts' have the IP to your API
+
+# If you are going to emulate with android, run this command
+# Be sure to have the emulator open
+$ yarn android
+
+# If you are going to emulate with ios, run this command
+$ cd ios && pod install
+$ cd ..
+$ yarn ios
+
+# Well done, project-mobile is started!
+```
 
 ## 📝 License
 
