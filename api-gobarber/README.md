@@ -48,6 +48,8 @@ Technologies that I used to develop this api
 
 ## 💻 Getting started
 
+- Import the insomnia_gobarber.json inside [Insomnia](https://insomnia.rest/download/) to see the possible routes of the api
+
 ### Requirements
 
 - [Node.js](https://nodejs.org/en/)
